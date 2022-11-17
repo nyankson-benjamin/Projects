@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+	<html>
+	    <head>
+	        <title>MILESTECHS</title>
+	        <script src="https://kit.fontawesome.com/df69eac956.js" crossorigin="anonymous"></script>
+	
+
+	        <!--CSS -->
+	
+
+	        <style>
+	        #myImg{
+	            width: 10px;
+	            height: 10px;
+	            border:1px solid red;
+	        }
+	            img{
+	                width: 100%;
+	                height: 100%;
+	                opacity:0.3;
+	                border: 10px solid red;
+	                /* margin-left: 30%; */
+	                position: fixed;
+	                /* padding: 10px; */
+	               border-radius: 20px;
+	                z-index: -1;
+	            }
+	            *{
+	                padding: 0;
+	                margin: 0;
+	                text-decoration: none;
+	                list-style: none;
+	                box-sizing: border-box;
+	        
+	            }
+	        
+	            body{
+	                font-family: montserrat;
+	            }
+	        
+	            nav{
+	                background: #fff;
+	                height: 80px;
+	                width: 100%;
+	                box-shadow: 0 2px 10px rgb(0, 0, 0);
+	            }
+	        
+	            label.logo{
+	                color: black;
+	                font-size: 35px;
+	                line-height: 80px;
+	                padding: 0 0 0 0;
+	                font-weight: bold;
+	               /* box-shadow:1px 1px 6px black; */
+	               margin-left: 10px;
+	               border-radius: 10px;
+	               
+	            }
+	
+
+	            #mil{
+	                color: white;
+	                text-decoration: underline;
+	                letter-spacing: 10px;
+	                background-color: blue;
+	               border-top-left-radius: 10px;
+	               padding: 2px;
+	            }
+	
+
+	            #tec{
+	                color: #ffc700;
+	                background-color: red;
+	                text-decoration: underline;
+	                border-top-right-radius: 10px;
+	                padding: 2px;
+	            }
+	        
+	            nav ul{
+	                float: right;
+	                margin-right: 20px;
+	            }
+	        
+	            nav ul li{
+	                display: inline-block;
+	                line-height: 80px;
+	                margin: 5px;
+	            }
+	        
+	            nav ul li a{
+	               color: black;
+	               font-size: 20px;
+	               padding: 7px 7px;
+	               border-radius: 15px;
+	               text-transform: uppercase;
+	            }
+	        
+	            a.active,a:hover{
+	                background-color: #ffc700;
+	                color: #fff;
+	                transition: .5s;
+	            }
+	        
+	            nav i{
+	               font-size: 40px;
+	            }
+	        
+	            .checkbtn{
+	                float: right;
+	                margin-right: 40px;
+	                margin-top: 28px;
+	                cursor: pointer;
+	                display: none;
+	            }
+	        
+	            #check{
+	                display: none;
+	            }
+	        
+	            @media (max-width: 952px){
+	        label.logo{
+	            font-size: 20px;
+	            padding-left: 50px;
+	        }
+	        nav ul li a{
+	            font-size: 16px;
+	        }
+	            }
+	        
+	            @media (max-width: 858px){
+	                .checkbtn{
+	                    display: block;
+	                }
+	        
+	                ul{
+	                    position: fixed;
+	                    width: 100%;
+	                    height: 100vh;
+	                    background: #fff;
+	                    top: 80px;
+	                    left: -100%;
+	                    text-align: center;
+	                    transition: all .5s;
+	        
+	                }
+	        
+	                nav ul li{
+	                    display: block;
+	                    margin: 50px 0;
+	                    line-height: 30px;
+	                }
+	        
+	                nav ul li a{
+	                    font-size: 20px;
+	                }
+	        
+	                a:hover,a.active{
+	                    background: none;
+	                    color: #ffc700;
+	                }
+	        
+	                #check:checked ~ ul{
+	                    left: 0;
+	                }
+	            }
+	        
+	        #projects{
+	            align-content: center;
+	            margin-left: 25%;
+	            /* margin-right: 40%; */
+	        }
+	        
+	        iframe{
+	        
+	            border: none;
+	        height:800px;
+	        margin:10px;
+	        width:500px; 
+	        border-radius:25px;
+	        animation:anim 1s 1;
+	        }
+	        
+	        #head{
+	        height:200px;
+	        display:none;
+	        }
+	        
+	        #text{
+	        font-size:100px;
+	        text-align:center;
+	        margin-top:50px;
+	        color:#fff;
+	        font-weight:700;
+	        }
+	        
+	        
+	        
+	        welcome{
+	        text-align:center;
+	        margin-top:50%;
+	        margin-bottom:auto;
+	        }
+	        
+	        #welcom,#cont{
+	            text-align:center;
+	            color:black;
+	            font-size:100px;
+	            font-family:'Times New Roman';
+	            font-weight:800;
+	            animation:anim 1s 1;
+	            background-color:white;
+	        }
+	        
+	        @keyframes anim{
+	            
+	            0%{margin-bottom:-130px;
+	            letter-spacing:10px;}
+	        
+	            10%{margin-bottom:-130px;
+	            letter-spacing:15px;}
+	        
+	        50%{margin-bottom:-130px;
+	        letter-spacing:20px;}
+	        }
+	        
+	        #contact{
+	        display:none;
+	        }
+	        
+	        #page,#num{
+	            text-align:center;
+	            font-size:100px;
+	        font-weight:700;
+	        color:#1900ff;
+	        /* margin-top:-125px; */
+	        position:relative;
+	        z-index:-1;
+	        animation: anim1 3s both 1;
+	        }
+	
+
+	        @keyframes anim1{
+	            50%{letter-spacing:10px;}
+	            100%{color: red;
+	                letter-spacing:15px;}
+	        }
+	        </style>
+	
+
+	    </head>
+	    <body style="background: #ffc700;">
+	<nav class="shadow">
+	    <input type="checkbox" id="check">
+	    <label for="check" class="checkbtn">
+	        <div id="myImg">
+	        <i class="fas fa-bars" id="lines" onclick="show();"></i>
+	    </div>
+	    </label>
+	    <label class="logo" onclick="home1();"><span id="mil">MILES</span><span id="tec">TECH</span></label>
+	    <ul>
+	        <li onclick="home();"><a href="#" class="active">HOME</a></li>
+	        <li onclick="myProjects();"><a href="#">PROJECTS</a></li>
+	        <li><a href="#">ABOUT</a></li>
+	        <li onclick="contact();"><a href="#">CONTACTS</a></li>
+	    </ul>
+	</nav>
+	<img  src="https://scontent.facc1-1.fna.fbcdn.net/v/t1.0-9/36570769_982059671971175_3169368298861101056_n.jpg?_nc_cat=111&ccb=2&_nc_sid=e3f864&_nc_eui2=AeE_KKdJ3bkWyCtIYlg094gECP9l5JIa7TII_2XkkhrtMqsxR6ZDg-HltU2q2SmRhk_N5zqXP1tHwJu7BGq_yKpZ&_nc_ohc=a5GqYgej7pQAX8peTqK&_nc_ht=scontent.facc1-1.fna&oh=03b29d54d947f1100c55202ed61ae428&oe=601B1DEF"> 
+	
+
+	
+
+	<div id="head">
+	    <br>
+	    <p id="text"></p>
+	    
+	</nav>
+	<br>
+	 
+	<div id="welcome">
+	<p id="welcom">WELCOME TO </p>
+	<p id="page">MY PAGE</p>
+	</div>
+	
+
+	<div id="contact">
+	<p id="cont">CONTACT</p>
+	<p id="num">0241216747</p>
+	<p id="num">milestech4@gmail.com</p>
+	</div>
+	
+
+	<div id="projects">
+	
+
+	 <iframe src="https://milestechs.netlify.app/">
+	</iframe>
+	
+
+	
+
+	<iframe src="https://milesfan.netlify.app/">
+	</iframe>
+	<br>
+	 <iframe src="https://milestechs.netlify.app/">
+	</iframe>
+	
+
+	
+
+	<iframe src="https://milesfan.netlify.app/">
+	</iframe>
+	</div>
+	<br>
+	   <br>
+	
+
+	
+
+	
+
+	<script>
+	
+
+	
+
+	
+
+	function myProjects(){
+	
+
+	var see=document.getElementById('projects').style.display="block";
+	var see=document.getElementById('head').style.display="block";
+	var see=document.getElementById('text').innerHTML="PROJECTS";
+	var see=document.getElementById('welcome').style.display="none";
+	var see=document.getElementById('contact').style.display="none";
+	var see=document.getElementById('head').style.backgroundColor="#ffc700";
+	
+
+	
+
+	var see=document.getElementById('links').style.visibility="visible";
+	var see=document.getElementById('line').style.display="none";
+	var see=document.getElementById('lines').style.display="block";
+	var see=document.getElementById('logo').style.fontSize="130px";
+	}
+	
+
+	function home(){
+	var see=document.getElementById('projects').style.display="none";
+	var see=document.getElementById('head').style.display="block";
+	var see=document.getElementById('text').innerHTML="HOME";
+	var see=document.getElementById('welcome').style.display="block";
+	var see=document.getElementById('contact').style.display="none";
+	var see=document.getElementById('head').style.backgroundColor="#ffc700";
+	
+
+	var see=document.getElementById('links').style.visibility="visible";
+	var see=document.getElementById('line').style.display="none";
+	var see=document.getElementById('lines').style.display="block";
+	var see=document.getElementById('logo').style.fontSize="100px";
+	}
+	
+
+	
+
+	function contact(){
+	var see=document.getElementById('projects').style.display="none";
+	var see=document.getElementById('contact').style.display="block";
+	var see=document.getElementById('text').innerHTML="CONTACT";
+	var see=document.getElementById('welcome').style.display="none";
+	var see=document.getElementById('head').style.backgroundColor="#ffc700";
+	
+
+	
+
+	var see=document.getElementById('links').style.visibility="visible";
+	var see=document.getElementById('head').style.display="block";
+	var see=document.getElementById('line').style.display="none";
+	var see=document.getElementById('lines').style.display="block";
+	var see=document.getElementById('logo').style.fontSize="130px";
+	}
+	
+
+	function home1(){
+	    //document.getElementsByClassName('logo').location.reload;
+	    document.location.reload(true);
+	}
+	
+
+	    </script>
+	
+
+	    </body>
+	</html>
+

@@ -1,0 +1,50 @@
+
+    
+      <br>
+
+      <div class="quiz1">
+        
+        Q1.
+        Which of the following functions is quadratic?<br>
+      
+        <input type="radio" name ="q1" value="a">&nbsp;&nbsp;&nbsp; A. 3x &minus; 2y = 0<br>
+        <input type="radio" name ="q1" value="b">&nbsp;&nbsp;&nbsp; B. 2x<sup>2</sup> + x = y &minus; 4<br>
+        <input type="radio" name ="q1" value="c">&nbsp;&nbsp;&nbsp; C. y = 2<sup>x</sup> &minus; 5<br>
+        <input type="radio" name ="q1" value="d">&nbsp;&nbsp;&nbsp; D. y = x<sup>2</sup> &minus; 2x +5x
+      
+        <br>
+        <br>
+      </div>
+      <br>
+      
+      <div class="quiz1">
+              
+        In this quiz, there are 30 multiple choise question. Select the posible Answer<br>
+        Q1.
+        Which of the following functions is quadratic?<br>
+      
+        <input type="radio" name ="q1" value="a">&nbsp;&nbsp;&nbsp; A. 3x &minus; 2y = 0<br>
+        <input type="radio" name ="q1" value="b">&nbsp;&nbsp;&nbsp; B. 2x<sup>2</sup> + x = y &minus; 4<br>
+        <input type="radio" name ="q1" value="c">&nbsp;&nbsp;&nbsp; C. y = 2<sup>x</sup> &minus; 5<br>
+        <input type="radio" name ="q1" value="d">&nbsp;&nbsp;&nbsp; D. y = x<sup>2</sup> &minus; 2x +5x
+      
+        <br>
+        <br>
+      </div>
+      <br>
+            <div class="quiz1">
+              
+              In this quiz, there are 30 multiple choise question. Select the posible Answer<br>
+              Q1.
+              Which of the following functions is quadratic?<br>
+      
+              <input type="radio" name ="q1" value="a">&nbsp;&nbsp;&nbsp; A. 3x &minus; 2y = 0<br>
+              <input type="radio" name ="q1" value="b">&nbsp;&nbsp;&nbsp; B. 2x<sup>2</sup> + x = y &minus; 4<br>
+              <input type="radio" name ="q1" value="c">&nbsp;&nbsp;&nbsp; C. y = 2<sup>x</sup> &minus; 5<br>
+              <input type="radio" name ="q1" value="d">&nbsp;&nbsp;&nbsp; D. y = x<sup>2</sup> &minus; 2x +5x
+      
+              <br>
+              
+                <button class="btn btn-primary" onclick="secondSet()" >NEXT</button>
+              </a>
+            </div>

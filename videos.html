@@ -1,0 +1,249 @@
+<!DOCTYPE html> 
+<html lang="en">
+ <head> 
+<meta charset="utf-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --> 
+<title>QUADRATIC EQUATIONS</title> <!-- Bootstrap -->
+ <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="style.css" rel="stylesheet">
+
+
+</head>
+ <body> 
+
+  <nav class="navbar navbar-default" id="nav">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand"><img src="Pics/uew.png" width="70px"></a>
+
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="Index.html">HOME</a></li>
+        <li><a href="Quad.html">QUADRATIC</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Quiz.html">QUIZ</a></li>
+        <li   class="active"><a href="videos.html">VIDEOS</a></li>
+        <li  ><a href="login.html">LOGIN</a></li>
+       
+      </ul>
+
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+<input type="text" class="form-control" placeholder="Search">
+        </div>
+<button class="btn btn-danger" type="button">SUBMIT</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    
+        
+
+<!-- row 1 -->
+<div class="row">
+
+  <div class="col-md-4">
+      <div class="col1">
+        
+        <H3><b>QUADRATIC FUNCTIONS</b></H3>
+
+
+    <div >
+
+     <button class="btn btn-primary btn-block" type="button" onclick="intro()">INTRODUCTION TO QUADRATIC FUNCTIONS</button>
+      <button class="btn btn-primary btn-block" type="button" onclick="graph()">GRAPHING QUADRATIC FUNCTIONS</button>
+      <button class="btn btn-primary btn-block" type="button" onclick="factorize()">FACTORIZATION</button>
+      <button class="btn btn-primary btn-block" type="button" onclick="roots()">ROOTS OF QUADRATIC FUNCTIONS</button>
+     <button class="btn btn-primary btn-block" type="button" onclick="complete()">METHOD OF COMPLETING SQUARES</button>
+     <button class="btn btn-primary btn-block" type="button" onclick="formula()">USING THE QUADRATIC FORMULA</button>
+      
+    </div>
+  
+    <ul>
+
+
+      
+      </div>
+  
+  </div>
+
+
+  <div class="col-md-5">
+    <div class="col2"><h3><b> VIDEOS ON QUADRATIC FUNCTIONS</b></h3>
+
+      <p style="text-align: center; color: blue; font-size: 25px;" id="topic"><b></b></p>
+      <!-- intro -->
+      <iframe width="420" height="315" style="margin:auto;" 
+  src="https://www.youtube.com/embed/IWigvJcCAJ0">
+  </iframe>
+  
+  <!-- graph -->
+  <iframe width="420" height="315" style="margin:auto ; display: none;"
+  src="https://www.youtube.com/embed/Hq2Up_1Ih5E">
+  </iframe>
+
+  <!-- factorize -->
+  <iframe width="420" height="315" style="margin:auto ; display: none;"
+  src="https://www.youtube.com/embed/qeByhTF8WEw">
+  </iframe>
+
+  <!-- roots -->
+  <iframe width="420" height="315" style="margin:auto ; display: none;"
+  src="https://www.youtube.com/embed/ROTzYjLcvE0">
+  </iframe>
+
+  <!-- completing sqrs -->
+  <iframe width="420" height="315" style="margin:auto ; display: none;"
+  src="https://www.youtube.com/embed/C206SNAXDGE">
+  </iframe>
+       
+  <!-- formula -->
+  <iframe width="420" height="315" style="margin:auto ; display: none;"
+  src="https://www.youtube.com/embed/LKm3JVH5P7o">
+  </iframe>
+       
+       <br>
+       <br>
+</div>
+
+</div>
+
+<div  class="col-md-3">
+    <div class="col3"><h3>CALCULATOR</h3>
+      <div class="col3"><h3> </h3>
+    
+        <img src="Pics/equation.png">
+    
+        <br>
+        <br>
+      <input type="text" id="a" placeholder="Input the value of a">
+      <br>
+      <br>
+      <input type="text" id="b" placeholder="Input the value of b">
+      <br>
+      <br>
+      <input type="text" id="c" placeholder="Input the value of c">
+      <br>
+      <br>
+    <button class="btn" onclick="cal()">CALCULATE</button>
+    <button class="btn" onclick="reset1()">CLEAR</button>
+    <br>
+    <br>
+     <b><p id="ans" style="color: blue; font-size: 20px;"></p></b>
+      </div>
+    </div>
+
+</div>
+
+</div>
+
+<!-- <div class="row">
+
+  <div class="col-md-12">
+      <div class="col1">footer</div>
+  
+  </div> -->
+
+</div>
+
+
+
+
+  </div>
+
+  
+
+
+
+  
+
+
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="Jquery.min.js"></script>
+ <!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script src="script.js">
+
+</script>
+
+<script>
+
+var text=document.getElementById('topic');
+var iframe=document.getElementsByTagName('iframe');
+
+function intro(){
+iframe[0].style.display="list-Item";
+iframe[1].style.display="none";
+iframe[2].style.display="none";
+iframe[3].style.display="none";
+iframe[4].style.display="none";
+iframe[5].style.display="none";
+text.innerHTML="INTRODUCTION TO QUADRATIC FUNCTIONS";
+}
+
+function graph(){
+iframe[1].style.display="list-Item";
+iframe[0].style.display="none";
+iframe[2].style.display="none";
+iframe[3].style.display="none";
+iframe[4].style.display="none";
+iframe[5].style.display="none";
+
+text.innerHTML="GRAPHING QUADRATIC FUNCTIONS";
+}
+
+function factorize(){
+iframe[2].style.display="list-Item";
+iframe[0].style.display="none";
+iframe[1].style.display="none";
+iframe[3].style.display="none";
+iframe[4].style.display="none";
+iframe[5].style.display="none";
+text.innerHTML="FACTORIZATION METHOD";
+}
+
+function roots(){
+iframe[3].style.display="list-Item";
+iframe[0].style.display="none";
+iframe[1].style.display="none";
+iframe[2].style.display="none";
+iframe[4].style.display="none";
+iframe[5].style.display="none";
+
+text.innerHTML="ROOTS OF A QUADRATIC";
+}
+
+function complete(){
+iframe[4].style.display="list-Item";
+iframe[0].style.display="none";
+iframe[1].style.display="none";
+iframe[2].style.display="none";
+iframe[3].style.display="none";
+iframe[5].style.display="none";
+
+text.innerHTML="METHOD OF COMPLETING SQUARES";
+}
+
+function formula(){
+iframe[5].style.display="list-Item";
+iframe[0].style.display="none";
+iframe[1].style.display="none";
+iframe[2].style.display="none";
+iframe[3].style.display="none";
+iframe[4].style.display="none";
+
+text.innerHTML="USING THE QUADRATIC FORMULA";
+}
+
+</script>
+
+ </body>
+ </html>
